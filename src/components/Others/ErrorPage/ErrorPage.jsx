@@ -1,29 +1,30 @@
 import React from 'react';
 import { Link, useRouteError } from 'react-router-dom';
+import errorPage from '../../../assets/img/404.gif'
 
 const ErrorPage = () => {
    const error = useRouteError();
    return (
       <div>
-         <div className="grid h-screen px-4 bg-white place-content-center">
+         <div className="grid h-screen px-4 bg-white place-content-center ">
             <div className="text-center">
-                <h1 className="font-black text-gray-200 text-9xl">404</h1>
+               <img className='w-[350px] mx-auto' src={errorPage} alt="" />
+               <p className="mt-4 text-[#000000] font-Primary text-3xl ">Oops! That page can't be found.</p>
+               <div className='border-2 my-3 w-[256px] mx-auto'></div>
+               <p className="mt-4 text-[#000000] text-base">We're really sorry but we can't seem to find <br /> the page you were looking for.</p>
+               <p className="my-4 text-[#ff8441] font-Primary text-2xl uppercase">{error.statusText || error.message}</p>
 
-                <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    Uh-oh!
-                </p>
+               <Link to={'/'} class="relative inline-block text-lg group">
+                  <span className="relative z-10 block px-10 py-3 overflow-hidden font-medium leading-tight text-[#ff8441] transition-colors duration-300 ease-out border-2 border-[#ff8441] rounded-lg group-hover:text-white">
+                     <span className="absolute inset-0 w-full h-full px-10 py-3 rounded-lg bg-gray-50"></span>
+                     <span className="absolute left-0 w-[308px] h-[308px] -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-[#ff8441] group-hover:-rotate-180 ease"></span>
+                     <span className="relative">Back to Homepage</span>
+                  </span>
+                  <span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-[#ff8441] rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+               </Link>
 
-                <p className="mt-4 text-gray-500">We can't find that page.</p>
-                <p className="mt-4 text-red-600">{error.statusText || error.message}</p>
-
-                <Link
-                    to="/"
-                    className="inline-block px-5 py-3 mt-6 text-sm font-medium text-white bg-indigo-600 rounded hover:bg-indigo-700 focus:outline-none focus:ring"
-                >
-                    Go Back Home
-                </Link>
             </div>
-        </div>
+         </div>
       </div>
    );
 };
