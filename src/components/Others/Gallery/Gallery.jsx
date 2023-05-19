@@ -1,7 +1,13 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import img1 from '../../../assets/img/gallery/cuty baby.jpg'
 
 const Gallery = () => {
+   AOS.init({
+      duration: 2000,
+      easing: 'ease-in-sine',
+   });
    return (
       <section className="text-gray-600 body-font">
          <div className="container px-5 py-24 mx-auto">
@@ -17,7 +23,7 @@ const Gallery = () => {
             </div>
             {/* img  */}
 
-            <div className="  py-3 mx-auto items-center ">
+            <div className="  py-3 mx-auto items-center cursor-none" data-aos="fade-down-right">
                <div className="grid grid-cols-4 grid-rows-4 grid-flow-col gap-2">
                   <div className="w-full row-span-2">
                      <img
