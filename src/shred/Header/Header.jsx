@@ -19,6 +19,8 @@ const Header = () => {
                      <div className="ml-10 flex items-center space-x-4 font-Secondary">
                         <Link to={'/'} className="px-2 py-2 text-gray-500 hover:text-gray-900 relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">Home</Link>
 
+                        <Link to={'/all-toy'} className="px-2 py-2 text-gray-500 hover:text-gray-900 relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">All Toy</Link>
+
                         <Link to={'/contact'} className="px-2 py-2 text-gray-500 hover:text-gray-900 relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">Contact</Link>
 
                         <Link to={'/blog'} className="px-2 py-2 text-gray-500 hover:text-gray-900 relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">Blog</Link>

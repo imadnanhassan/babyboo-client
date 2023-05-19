@@ -28,12 +28,11 @@ const Footer = () => {
    const now = new Date();
    const update = now.getFullYear();
    AOS.init({
-
-
+      duration:2000
    });
    return (
-      <footer className="lg:max-w-[1350px] mx-auto py-10 font-Primary" >
-         <section className="border-b-2 py-5 mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center md:justify-between" data-aos="fade-down"
+      <footer className="lg:max-w-[1350px] mx-auto py-10  font-Primary" >
+         <section className="border-b-2 px-7 py-5 mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center md:justify-between" data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500">
             <div className="flex items-center gap-x-4">
@@ -68,7 +67,7 @@ const Footer = () => {
             <div></div>
          </section>
         
-         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 border-b-2 pb-5" data-aos="fade-up">
+         <section className="grid grid-cols-1 px-7 md:grid-cols-2 lg:grid-cols-4 gap-6 border-b-2 pb-5" data-aos="fade-up">
             <div>
                <img className='w-44' src={logo} alt="" />
                <p className='py-5 font-normal font-Primary text-base text-slate-500 pr-4'>
@@ -161,7 +160,7 @@ const Footer = () => {
          
          </section>
         
-         <section className="flex flex-col md:flex-row gap-y-5 justify-between items-center" data-aos="fade-right">
+         <section className="flex flex-col px-7 md:flex-row gap-y-5 justify-between items-center" data-aos="fade-right">
             <div>
                <ul className="flex justify-center md:justify-start gap-x-4 mt-5">
                   <li className="group">
