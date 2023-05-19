@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const AllToyBanner = () => {
    return (
-      <div className="p-6 py-12 bg-cyan-600 text-gray-50 text-center">
-         <h2>All Toys</h2>
-         <div className="container mx-auto">
+      <div className="p-6 py-12 bg-[#ff8441] font-Primary text-gray-50 text-center">
+         <h2 className='text-2xl font-semibold'>All Toys</h2>
+         <div className="container mx-auto ">
             <div className="flex flex-col lg:flex-row items-center justify-between">
                <nav aria-label="breadcrumb" className="w-full p-4  text-white">
                   <ol className="flex justify-center items-center h-10 space-x-2">
@@ -18,10 +18,10 @@ const AllToyBanner = () => {
                      </li>
 
                      <li className="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" fill="currentColor" className="w-2 h-2 mt-1 transform rotate-90 fill-current text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" fill="currentColor" className="w-2 h-2 mt-1 transform rotate-90 fill-current text-white">
                            <path d="M32 30.031h-32l16-28.061z"></path>
                         </svg>
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-1 capitalize hover:underline">Shop</a>
+                        <a className="flex cursor-default items-center px-1 capitalize hover:underline">Shop</a>
                      </li>
 
                   </ol>

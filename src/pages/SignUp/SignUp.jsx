@@ -19,6 +19,11 @@ const SignUp = () => {
                      <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border-white bg-white text-gray-800 focus:border-cyan-600" />
                   </div>
 
+                  <div className="space-y-1 text-sm">
+                     <label for="password" className="block text-white">Photo URL</label>
+                     <input type="password" name="photo" id="photo" placeholder="Photo URL" className="w-full px-4 py-3 rounded-md border-white bg-white text-gray-800 focus:border-cyan-600" />
+                  </div>
+
                   <button className="block w-full p-3 text-center rounded-sm text-white bg-[#ff8441]">Sign in</button>
                </form>
 
