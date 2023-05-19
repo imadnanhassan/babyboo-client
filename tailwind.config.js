@@ -27,7 +27,15 @@ export default {
       fontFamily: {
         Primary: ['Montserrat Alternates', 'sans-serif']
 
-      }
+      },
+      animation: {
+        shine: "shine 1s",
+      },
+      keyframes: {
+        shine: {
+          "100%": { left: "125%" },
+        },
+      },
     },
   },
   plugins: [require("daisyui")],
