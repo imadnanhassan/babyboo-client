@@ -160,7 +160,7 @@ const Footer = () => {
          
          </section>
         
-         <section className="flex flex-col px-7 md:flex-row gap-y-5 justify-between items-center" data-aos="fade-right">
+         <section className="flex flex-col px-7 md:flex-row gap-y-5 justify-between items-center" >
             <div>
                <ul className="flex justify-center md:justify-start gap-x-4 mt-5">
                   <li className="group">
