@@ -78,27 +78,27 @@ const Footer = () => {
                <strong>Account</strong>
                <ul className="gap-y-2 flex flex-col mt-5">
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
                         My Account
                      </Link>
                   </li>
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
                         Login / Register
                      </Link>
                   </li>
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">
                         Cart
                      </Link>
                   </li>
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">
                         Whislist
                      </Link>
                   </li>
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100">
+                     <Link to={'/all-toy'} className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">
                         Shop
                      </Link>
                   </li>
@@ -108,27 +108,27 @@ const Footer = () => {
                <strong>Quick Link</strong>
                <ul className="gap-y-2 flex flex-col mt-5">
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
                         Privacy Policy
                      </Link>
                   </li>
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
                         Terms of Use
                      </Link>
                   </li>
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">
                         FAQ
                      </Link>
                   </li>
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">
                         Contact
                      </Link>
                   </li>
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100">
                         About
                      </Link>
                   </li>
@@ -138,7 +138,7 @@ const Footer = () => {
                <strong>Download App</strong>
                <ul className="gap-y-2 flex flex-col my-5">
                   <li>
-                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
+                     <Link className="relative cursor-pointer text-md font-medium before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#ff8441] before:transition-all before:duration-200 hover:before:scale-x-100 hover:before:w-contain">
                         Save $3 With App & New User only
                      </Link>
                   </li>
@@ -194,7 +194,7 @@ const Footer = () => {
                </ul>
             </div>
             <div>
-               <p>&#169; {update} All Rights reserved by BabyBo</p>
+               <p>&#169; {update} All Rights reserved by <a href="#" className='hover:underline text-[#ff8441]'>BabyBo</a> </p>
             </div>
             <div className="flex items-center gap-x-5">
                <p>Accept for</p>
