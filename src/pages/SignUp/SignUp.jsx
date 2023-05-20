@@ -10,8 +10,8 @@ const SignUp = () => {
                <form novalidate="" action="" className="space-y-6 ng-untouched ng-pristine ng-valid">
 
                   <div className="space-y-1 text-sm">
-                     <label for="username" className="block text-white">Username</label>
-                     <input type="text" name="username" id="username" placeholder="Username" className="w-full px-4 py-3 rounded-md border-white bg-white text-gray-800 focus:border-cyan-600" />
+                     <label for="email" className="block text-white">Email</label>
+                     <input type="text" name="email" id="email" placeholder="Email" className="w-full px-4 py-3 rounded-md border-white bg-white text-gray-800 focus:border-cyan-600" />
                   </div>
 
                   <div className="space-y-1 text-sm">
