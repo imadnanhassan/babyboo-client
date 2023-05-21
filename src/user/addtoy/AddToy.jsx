@@ -34,7 +34,7 @@ const AddToy = () => {
 
       console.log(addToy);
 
-     
+
 
 
    };
@@ -66,7 +66,7 @@ const AddToy = () => {
                   <input type="text" name="sellerEmail" defaultValue={user?.email} placeholder="Seller Email" className="input input-bordered" />
                </div>
 
-               
+
 
                <select className="select select-primary w-full mt3 max-w-xs">
 

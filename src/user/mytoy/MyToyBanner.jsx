@@ -4,7 +4,7 @@ const MyToyBanner = () => {
    return (
       <div>
          <div className="p-6 py-12 bg-[#ff8441] font-Primary text-gray-50 text-center">
-            <h2 className='text-2xl font-semibold'>All Toys</h2>
+            <h2 className='text-2xl font-semibold'>My Toy</h2>
             <div className="container mx-auto ">
                <div className="flex flex-col lg:flex-row items-center justify-between">
                   <nav aria-label="breadcrumb" className="w-full p-4  text-white">
