@@ -7,7 +7,7 @@ import Blog from '../pages/Blog/Blog';
 import AllToy from '../pages/AllToy/AllToy';
 import Login from '../pages/Login/Login';
 import SignUp from '../pages/SignUp/SignUp';
-import AddToy from '../pages/AddAToy/AddToy';
+import AddToy from '../user/addtoy/AddToy';
 
 
 

@@ -1,7 +1,10 @@
 import React from 'react';
+import BlogBanner from './BlogBanner';
 
 const Blog = () => {
    return (
+      <>
+      <BlogBanner></BlogBanner>
       <div className='container mx-auto max-w-2xl py-20'>
          <h2 className='text-center py-4 mb-3'>Blog Section</h2>
 
@@ -44,6 +47,7 @@ const Blog = () => {
          </div>
 
       </div>
+      </>
    );
 };
 
