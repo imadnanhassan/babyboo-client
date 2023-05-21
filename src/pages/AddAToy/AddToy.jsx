@@ -2,36 +2,10 @@ import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const AddToy = () => {
-
-
-   // const { user } = useContext(AuthContext);
-   // const handleSubmit = (e) => {
-   //    e.preventDefault();
-   //    const form = e.target;
-   //    const toyname = form.name.toyname;
-   //    const sellerName = form.name.sellerName;
-   //    const email = user?.email;
-   //    const category = form.name.category;
-   //    const price = form.name.price;
-   //    const rating = form.name.rating;
-   //    const number = form.name.number;
-   //    const description = form.name.description
-
-
-   //    const addToy = {
-   //       sellerName: sellerName,
-   //       email,
-   //       toyname,
-   //       category,
-   //       price,
-   //       rating,
-   //       number,
-   //       description
-   //    }
-   //    console.log(addToy);
-
-   // const service = useLoaderData();
-   // const { title, _id, price, img } = service;
+   const [subcategory, setSubcategory] = useState('');
+   const handleSubcategoryChange = (e) => {
+      setSubcategory(e.target.value);
+   };
    const { user } = useContext(AuthContext);
 
    const handleSubmit = event => {
@@ -60,20 +34,7 @@ const AddToy = () => {
 
       console.log(addToy);
 
-      // fetch('http://localhost:5000/bookings', {
-      //    method: 'POST',
-      //    headers: {
-      //       'content-type': 'application/json'
-      //    },
-      //    body: JSON.stringify(booking)
-      // })
-      //    .then(res => res.json())
-      //    .then(data => {
-      //       console.log(data);
-      //       if (data.insertedId) {
-      //          alert('service book successfully')
-      //       }
-      //    })
+     
 
 
    };
@@ -84,31 +45,42 @@ const AddToy = () => {
          <form onSubmit={handleSubmit}>
             <div className="container mx-auto max-w-lg py-5 grid grid-cols-1 md:grid-cols-2 gap-6">
 
-
                <div className="form-control">
                   <label className="label">
                      <span className="label-text">Picture URL</span>
                   </label>
                   <input type="text" name="pictureUrl" placeholder="Picture URL" className="input input-bordered" />
                </div>
+
                <div className="form-control">
                   <label className="label">
                      <span className="label-text">Seller Name</span>
                   </label>
                   <input type="text" name="sellerName" defaultValue={user?.displayName} placeholder="Seller Name" className="input input-bordered" />
                </div>
+
                <div className="form-control">
                   <label className="label">
                      <span className="label-text">Seller Email</span>
                   </label>
                   <input type="text" name="sellerEmail" defaultValue={user?.email} placeholder="Seller Email" className="input input-bordered" />
                </div>
-               <div className="form-control">
-                  <label className="label">
-                     <span className="label-text">Sub-category</span>
-                  </label>
-                  <input type="text" name="subcategory" placeholder="Sub-category" className="input input-bordered" />
-               </div>
+
+               
+
+               <select className="select select-primary w-full mt3 max-w-xs">
+
+                  <option disabled selected>Select sub-category</option>
+                  <option value="mathToys">Math Toys</option>
+                  <option value="languageToys">Language Toys</option>
+                  <option value="scienceToys">Science Toys</option>
+                  <input
+                     type="text"
+                     name="subcategory"
+                     className="input input-bordered w-full"
+                  />
+               </select>
+
                <div className="form-control">
                   <label className="label">
                      <span className="label-text">Price</span>
