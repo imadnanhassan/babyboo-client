@@ -16,28 +16,30 @@ const Blog = () => {
 
          <div tabIndex={1} className="my-2 collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div className="collapse-title text-xl font-medium">
-               Focus me to see content
+               Compare SQL and NoSQL databases?
             </div>
             <div className="collapse-content">
-               <p>tabIndex={1} attribute is necessary to make the div focusable</p>
+               <p>SQL databases are relational, structured, and use a fixed schema. They provide ACID transactions and are ideal for complex queries and relationships. NoSQL databases are non-relational, flexible, and schema-less. They offer high scalability, eventual consistency, and are suitable for large-scale distributed systems and unstructured data.</p>
             </div>
          </div>
 
          <div tabIndex={2} className="my-2 collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div className="collapse-title text-xl font-medium">
-               Focus me to see content
+               What is MongoDB aggregate and how does it work?
             </div>
             <div className="collapse-content">
-               <p>tabIndex={2} attribute is necessary to make the div focusable</p>
+               <p>In MongoDB, the aggregate operation is used to perform advanced data processing and analysis on collections. It allows you to perform complex operations like filtering, grouping, sorting, and aggregating data using a pipeline of stages. Each stage transforms the documents in the pipeline to produce the desired result.</p>
             </div>
          </div>
 
          <div tabIndex={4} className="my-2 collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div className="collapse-title text-xl font-medium">
-               Focus me to see content
+               What is express js? What is Nest JS?
             </div>
             <div className="collapse-content">
-               <p>tabIndex={4} attribute is necessary to make the div focusable</p>
+               <p>Express.js is a popular web application framework for Node.js. It provides a simple and minimalist approach to building web applications and APIs. Express.js allows developers to handle HTTP requests, define routes, handle middleware, and manage responses efficiently. It is known for its flexibility and extensive ecosystem of middleware and plugins.
+                  <br /> <br />
+                  Nest.js, on the other hand, is a progressive, extensible, and opinionated framework for building scalable and efficient server-side applications. It is built on top of Express.js and utilizes TypeScript for building robust and maintainable applications. Nest.js follows the modular architecture pattern and provides features like dependency injection, decorators, and powerful CLI tools to streamline development. It is often used for building enterprise-grade applications and microservices.</p>
             </div>
          </div>
 
