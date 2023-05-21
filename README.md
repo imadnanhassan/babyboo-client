@@ -29,4 +29,4 @@ import cookiteer
 This project uses Tailwind CSS for styling. The framework provides Tailwind and Tailwind Components
 
 
-## Live Link [Click Me]([https://babybo-b544c.web.app/]))
+## Live Link [Click Me]([https://babybo-b544c.web.app/])
