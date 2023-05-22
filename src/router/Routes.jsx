@@ -1,5 +1,4 @@
 import React from 'react'; import { createBrowserRouter } from 'react-router-dom';
-import App from '../App';
 import MainLayout from '../layout/MainLayout';
 import ErrorPage from '../components/Others/ErrorPage/ErrorPage';
 import Home from '../pages/Home/Home';
@@ -8,6 +7,9 @@ import AllToy from '../pages/AllToy/AllToy';
 import Login from '../pages/Login/Login';
 import SignUp from '../pages/SignUp/SignUp';
 import AddToy from '../user/addtoy/AddToy';
+import ViewDetails from '../pages/AllToy/Viewdetails';
+import PrivateRoute from './PrivateRoute';
+import MyToy from '../user/mytoy/MyToy';
 
 
 
@@ -26,21 +28,31 @@ const router = createBrowserRouter([
             element: <AllToy></AllToy>
          },
          {
-            path:'/blog',
-            element:<Blog></Blog>
+            path: '/blog',
+            element: <Blog></Blog>
          },
          {
-            path:'/login',
-            element:<Login></Login>
+            path: '/login',
+            element: <Login></Login>
          },
          {
-            path:'/logout',
+            path: '/logout',
             element: <SignUp></SignUp>
          },
          {
-            path:'/addToy',
-            element: <AddToy></AddToy>
+            path: '/addToy',
+            element: <PrivateRoute><AddToy></AddToy></PrivateRoute>
 
+         },
+         {
+            path: '/viewdetails/:id',
+            element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
+            loader: ({ params }) => fetch(`https://babybo-server-dev-abulhassan.vercel.app/viewdetails/${params.id}`)
+
+         },
+         {
+            path: '/my-toy',
+            element: <PrivateRoute><MyToy></MyToy></PrivateRoute>
          }
 
       ]

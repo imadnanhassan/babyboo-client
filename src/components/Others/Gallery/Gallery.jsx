@@ -2,6 +2,11 @@ import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import img1 from '../../../assets/img/gallery/cuty baby.jpg'
+import img2 from '../../../assets/img/allToy/img1.jpg'
+import img3 from '../../../assets/img/allToy/img3.jpg'
+import img5 from '../../../assets/img/allToy/img5.jpg'
+import img7 from '../../../assets/img/allToy/img7.jpg'
+import img10 from '../../../assets/img/allToy/img10.jpg'
 
 const Gallery = () => {
    AOS.init({
@@ -28,10 +33,10 @@ const Gallery = () => {
                   <div className="w-full row-span-2">
                      <img
 
-                        src="https://images.unsplash.com/photo-1586921829167-409624a3734a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        src={img7}
                         alt="Photo by Claudio Schwarz on Unsplash"
 
-                        className="inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100"
+                        className="inset-0 h-full w-full object-cover object-center bg-cover bg-no-repeat rounded opacity-75 hover:opacity-100"
                      />
                   </div>
                   <div className="w-full col-span-2 row-span-2">
@@ -43,7 +48,7 @@ const Gallery = () => {
                   </div>
                   <div className="w-full ">
                      <img
-                        src="https://images.unsplash.com/photo-1489981424607-45c58daf0581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        src={img3}
                         alt="Photo by Claudio Schwarz on Unsplash"
                         className="inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 "
                      />
@@ -57,7 +62,7 @@ const Gallery = () => {
                   </div>
                   <div className="w-full col-span-2 row-span-2">
                      <img
-                        src="https://images.unsplash.com/photo-1586921829167-409624a3734a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        src={img2}
                         alt="Photo by Claudio Schwarz on Unsplash"
                         className="inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 "
                      />
@@ -71,14 +76,14 @@ const Gallery = () => {
                   </div>
                   <div className="w-full">
                      <img
-                        src="https://images.unsplash.com/photo-1529335764857-3f1164d1cb24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=389&q=80"
+                        src={img5}
                         alt="Photo by Claudio Schwarz on Unsplash"
                         className="inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 "
                      />
                   </div>
                   <div className="w-full">
                      <img
-                        src="https://images.unsplash.com/photo-1489981424607-45c58daf0581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        src={img10}
                         alt="Photo by Claudio Schwarz on Unsplash"
                         className="inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 "
                      />

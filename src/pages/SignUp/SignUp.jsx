@@ -1,26 +1,39 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 const SignUp = () => {
+   useTitle('Sign Up');
 
-   const { createUser } = useContext(AuthContext);
+   const { createUser, updateUser } = useContext(AuthContext);
+   const navigate = useNavigate();
 
    const handleSignUp = event => {
       event.preventDefault();
       const form = event.target;
       const name = form.name.value;
       const email = form.email.value;
-      const photo = form.photo.photoURL
+      const photo = form.photo.value
       const password = form.password.value;
-      console.log(name, email, photo, password)
 
-        createUser(email, password)
-            .then(result => {
-                const user = result.user;
-                console.log(user)
+      createUser(email, password)
+         .then(result => {
+            const createUser = result.user;
+            updateUser({
+               displayName: name,
+               photoURL: photo
+
             })
-            .catch(error => console.log(error))
+               .then(() => {
+
+               })
+               .catch(error => console.log(error))
+            navigate('/login')
+            console.log(createUser)
+         })
+         .catch(error => console.log(error))
+
 
    }
    return (
