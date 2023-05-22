@@ -33,7 +33,7 @@ const ToyCard = ({ allToy }) => {
             {quantity}
          </td>
          <th>
-            <Link to={`/viewdetails/${_id}`}> <button className="btn btn-outline btn-success">Details</button></Link>
+            <Link to={`/viewdetails/${_id}`}> <button className="btn btn-outline btn-success">View Details</button></Link>
          </th>
       </tr>
    );
